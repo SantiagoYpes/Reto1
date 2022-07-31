@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Gestión de Empleados
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1a28e5f39b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/user_man.css">
+    <script src="../js/user_man.js"></script>
+</head>
+<header>
+    <div class="overlay">
+        <h1>Gestionar Empleados</h1>
+    </div>
+</header>
+
+<body>
+    <br>
+    <center>
+        <h3><a href="home_admin.html">  Inicio </a></h3>
+        
+        <table class="options">
+            <tr>
+                <th><input type="text" placeholder="Ingrese Id" id="current_id" ></th>
+                <th> <button type="submit" class="icon"><i class="fa-solid fa-pen" id="btn_edit"></i></button> </th>
+                <th><button type="submit" class="icon"><i class="fa-solid fa-trash" id="btn_delete"></i></button> </th>
+            </tr>
+        </table>
+        <br> 
+        <table class="head_user">
+            <th class="id_info">
+                <input type="text" value="Documento de Identidad" readonly>
+                <input type="text" value="Nombre" readonly>
+                <input type="text" value="Cargo" readonly>
+                <input type="text" value="Salario" readonly>
+                <input type="text" value="Email" readonly>
+            </th>
+
+        </table>
+        <div id="user_table">
+
+        </table>
+        
+    </center>
+    <center>
+        <table class="option">
+            <tr>
+                <th> <button type="submit" class="icon"><i class="fa-solid fa-plus" id="btn_add"></i></button> </th>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+}  
+ 
+
+
+/*estilos generales*/ 
+
+.contenedor,
+.wave-contenedor{
+    width: 90%; 
+    max-width: 1000px; 
+    overflow: hidden;
+    margin: auto; 
+    padding: 0 0 80px 0;
+} 
+
+.contenedor{
+    padding: 80px 0;
+} 
+
+.titulo{
+    font-weight: 300; 
+    font-size: 35px; 
+    text-align: center; 
+    margin-bottom: 30px; 
+} 
+
+.titulo.left{
+    text-align: center;
+} 
+
+.titulo.rigth{
+    text-align: right;
+}
+
+/*Section*/  
+
+.website {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.website img{
+    width: 48%;
+} 
+
+.website .contenedor-textos-main{
+    width: 40%; 
+} 
+
+
+.cta{
+    display: inline-block; 
+    text-decoration: none; 
+    background-color:#c1524e; 
+    padding: 12px 15px; 
+    border-radius: 10px; 
+    color: #fff;
+} 
+
+
+/*Cards*/ 
+
+.content-cards{
+    display: flex; 
+    width: 100%; 
+    justify-content: space-evenly;  
+    flex-wrap: wrap; 
+} 
+
+.card{
+    width: 30%; 
+    text-align: center; 
+    height: 300px; 
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);  
+    transform: scale(1); 
+    transition: transform 0.3s; 
+
+}   
+
+.card1{
+    width: 30%;  
+    text-align: center; 
+    height: 350px; 
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);  
+    transform: scale(1); 
+    transition: transform 0.3s; 
+}     
+
+#btn_log{
+    height: 200px;
+    width: 200px;
+    color:#c1524e;
+}
+
+
+.card1 i {
+    margin: 30px 0 20px 0; 
+    color: #c1524e; 
+    font-size: 50px;
+}  
+
+.card1:hover{ 
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);   
+    transform: scale(1.03); 
+    cursor: pointer;
+} 
+
+
+.card:hover{ 
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);   
+    transform: scale(1.03); 
+    cursor: pointer;
+} 
+
+.card i {
+    margin: 30px 0 20px 0; 
+    color: #c1524e; 
+    font-size: 50px;
+} 
+
+.card p{
+    font-weight: 300; 
+    font-size: 25px; 
+    margin-bottom: 10px;
+} 
+
+
+
+.form {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+} 
+ 
+
+
+.form textarea{
+    width: 100%; 
+    margin-bottom: 15px;
+} 
+
+
+
+
+
+
