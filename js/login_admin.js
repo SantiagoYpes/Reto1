@@ -16,6 +16,7 @@ function start(){
 	request.onsuccess = function(e){
 		//Guardamos la base de datos en una variable (bd)
 		bd = e.target.result;
+		//Registrar()
 	}
 	//Creamos el almacén de objetos (Tabla) -> Pagos - Usuarios - Administrador - Sesión Iniciada
 	request.onupgradeneeded = function(e){
@@ -40,7 +41,7 @@ function Registrar(){
 	//Función para agregar el admin a la BD
 	//Recuperamos y Guardamos en variable los campos del formulario
 	var user = "Santi1604"
-	var password = 300000000
+	var password = "santi1234"
 	//Agregamos al almacén de datos los objetos (registros)
 	var transaction = bd.transaction(["admins"], "readwrite")
 	//Almacenamos en la variable almacen la transacción
