@@ -33,18 +33,21 @@ function Add_user(){
     let position = document.getElementById("position").value
     let email= document.getElementById("email").value
     let tel = document.getElementById("tel").value
-    let isactive = "Yes"
-
+    let isactive = document.getElementById("status").checked
+    let status=""
+    if (isactive) {
+        status = "1"
+    }else{
+        status ="0"
+    }
     //Agregamos al almacén de datos los objetos (registros)
     var transaction = bd.transaction(["users"], "readwrite");
     //Almacenamos en la variable almacen la transacción
     var store = transaction.objectStore("users");
     //Agregamos los datos del registro a los "campos"
     var agregar = store.add({id: id, name: name, salary:salary,
-        email:email,position:position,tel:tel,isactive:isactive});
+    email:email,position:position,tel:tel,isactive:status});
     alert("Empleado Registrado")
-    
-    
 }
 
 window.addEventListener("load", start, false);

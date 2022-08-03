@@ -7,8 +7,8 @@
 </head>
 <form>
     <h1>Realizar Pago</h1>
-    <input placeholder="Documento de Identidad del Empleado" type="text" id="id_user"/>
-    <select name="Pays" id="month_pay" class="month">   
+    <input placeholder="Documento de Identidad del Empleado" type="text" id="id_user" required/>
+    <select name="Pays" id="month_pay" class="month" required>   
         <option value=""> Selecciona el Mes </option>  
         <option value="Enero"> Enero </option> 
         <option value="Febrero"> Febrero </option>  
@@ -23,8 +23,8 @@
         <option value="Noviembre"> Noviembre </option>
         <option value="Diciembre"> Diciembre </option>   
     </select>
-    <input placeholder="Ingrese el Año" type="number" id="year_pay"/>
-    <select name="Pays" id="bank" class="municipio">   
+    <input placeholder="Ingrese el Año" type="number" id="year_pay" required/>
+    <select name="Pays" id="bank" class="municipio" required>   
         <option value=""> Selecciona el Banco </option>  
         <option value="BBVA"> BBVA </option> 
         <option value="BANCOLOMBIA"> BANCOLOMBIA </option>  

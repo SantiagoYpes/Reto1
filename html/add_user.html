@@ -7,12 +7,17 @@
 </head>
 <form>
     <h1>Agregar Empleado</h1>
-    <input placeholder="Documento de Identidad" type="text" id="id"/>
-    <input placeholder="Nombres y Apellidos" type="text" id="name"/>
-    <input placeholder="Cargo" type="text" id="position"/>
-    <input placeholder="Salario" type="number" id="salary"/>
-    <input placeholder="Email" type="text" id="email"/>
-    <input placeholder="Teléfono" type="text" id="tel"/>
+    <input placeholder="Documento de Identidad" type="text" id="id" required/>
+    <input placeholder="Nombres y Apellidos" type="text" id="name" required/>
+    <input placeholder="Cargo" type="text" id="position" required/>
+    <input placeholder="Salario" type="number" id="salary" required/>
+    <input placeholder="Email" type="text" id="email" required/>
+    <input placeholder="Teléfono" type="text" id="tel" required/>
+    <label class="switchBtn">
+      <input type="checkbox" id="status">
+      <div class="slide round"> Activo </div>
+    </label>
+    <br>
     <button class="btn" id="btn_add">Agregar</button>
     <br>
     <a href="user_man.html">  Regresar </a></h6>

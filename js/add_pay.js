@@ -44,20 +44,16 @@ function Add_pay() {
         let cursor = e.target.result;
         if (cursor) {
             let db_id = cursor.value.id
-            alert(db_salary)
             db_salary = cursor.value.salary
-            
             if (id_user == db_id) {
                 let transaction1 = bd.transaction(["pays"], "readwrite");
                 //Almacenamos en la variable almacen la transacción
                 let store1 = transaction1.objectStore("pays")
                 //Agregamos los datos del registro a los "campos"
-                alert(id_pay+ " " +id_user+ " " +year+ " " +month+ " " +bank+ " " +db_salary)
                 let agregar1 = store1.add({id_pay: id_pay, id_user: id_user, year:year,
                     month:month,bank:bank,value:db_salary});
                 Info()
             }
-            
         }
         else {
                 alert("Error de Pago, Usuario No Encontrado")
