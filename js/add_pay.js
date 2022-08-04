@@ -50,7 +50,7 @@ function Add_pay() {
                 //Almacenamos en la variable almacen la transacción
                 let store1 = transaction1.objectStore("pays")
                 //Agregamos los datos del registro a los "campos"
-                let agregar1 = store1.add({id_pay: id_pay, id_user: id_user, year:year,
+                let add1 = store1.add({id_pay: id_pay, id_user: id_user, year:year,
                     month:month,bank:bank,value:db_salary});
                 Info()
             }

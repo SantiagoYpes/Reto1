@@ -44,7 +44,6 @@ function Registrar(){
     let email="santiyezu8@hotmail.com"
     let tel = "3193903929"
     let isactive = "Yes"
-
     //Agregamos al almacén de datos los objetos (registros)
     var transaction = bd.transaction(["users"], "readwrite");
     //Almacenamos en la variable almacen la transacción
@@ -64,7 +63,6 @@ function Load_Users() {
     //alert(bd)
     var transaction = bd.transaction(["users"], "readonly");
     var store = transaction.objectStore("users");
-    //alert("VerUsuarios");
     var cursor = store.openCursor();
     //Si tiene éxito al abrir el cursor . . .
     cursor.addEventListener("success", UserTable, false);
@@ -88,7 +86,7 @@ function UserTable(e) {
 				</tr>
 			</table>
 			<div class ="div_info" id="vision`+ count + `"></div>
-			<br> `;
+			<br> `
         cursor.continue();
         count = count + 1;
     }
