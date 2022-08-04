@@ -14,7 +14,6 @@ function start() {
 	btnAdd.addEventListener("click", Redirect_Add, false);
     btnDelete = document.getElementById("btn_delete");
 	btnDelete.addEventListener("click", DeleteUser, false);
-
     //Crear Base de Datos
     let request = indexedDB.open("DB_1");
     //Verificar la creación de la base de datos
@@ -80,15 +79,15 @@ function UserTable(e) {
 			<table class="hover">
 				<tr>
 					<th class="id_info">
-                        <input type="text" placeholder="User `+ count + `" value="` + cursor.value.id + `" id="booking_id` + count + `" readonly> 
-					    <input type="text" placeholder="User `+ count + `" value="` + cursor.value.name + `" id="booking_id` + count + `" readonly> 
-					    <input type="text" placeholder="User `+ count + `" value="` + cursor.value.position + `" id="booking_id` + count + `" readonly> 
-                        <input type="text" placeholder="User `+ count + `" value="` + cursor.value.salary + `" id="booking_id` + count + `" readonly> 
-                        <input type="text" placeholder="User `+ count + `" value="` + cursor.value.email + `" id="booking_name` + count + `" readonly> 
+                        <input type="text" placeholder="User `+ count + `" value="` + cursor.value.id + `" id="id` + count + `" readonly> 
+					    <input type="text" placeholder="User `+ count + `" value="` + cursor.value.name + `" id="name` + count + `" readonly> 
+					    <input type="text" placeholder="User `+ count + `" value="` + cursor.value.position + `" id="position` + count + `" readonly> 
+                        <input type="text" placeholder="User `+ count + `" value="` + cursor.value.salary + `" id="salary` + count + `" readonly> 
+                        <input type="text" placeholder="User `+ count + `" value="` + cursor.value.email + `" id="email` + count + `" readonly> 
 					</th>
 				</tr>
 			</table>
-			<div class ="div_info" id="vision`+ cuenta + `"></div>
+			<div class ="div_info" id="vision`+ count + `"></div>
 			<br> `;
         cursor.continue();
         count = count + 1;
@@ -100,7 +99,6 @@ function UserTable(e) {
 function Redirect_Add(){
     window.open('../html/add_user.html','_top')
 }
-
 function DeleteUser(){
     var id_delete = document.getElementById("current_id").value
 	//Creamos la transacción
