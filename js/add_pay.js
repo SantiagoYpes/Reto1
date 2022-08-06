@@ -35,7 +35,7 @@ function Add_pay() {
     let year = document.getElementById("year_pay").value
     alert(year)
     let bank = document.getElementById("bank").value
-    let id_pay= "128"
+    let id_pay= String(random())
     //Creamos la transacción
     let transaction = bd.transaction(["users"], "readwrite");
     let store = transaction.objectStore("users");
@@ -63,5 +63,8 @@ function Add_pay() {
 }
 function Info(){
     alert("Pago Registrado")
+}
+function random() {
+    return Math.floor((Math.random() * (9999 - 1000 + 1)) + 1000);
 }
 window.addEventListener("load", start, false);

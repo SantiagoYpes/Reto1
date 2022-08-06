@@ -129,9 +129,6 @@ function GetPays(e) {
             document.getElementById("out").value = total_out
             document.getElementById("total_inp").value = total_in
             document.getElementById("total_outp").value = total_out
-            if (total_in<50000000) {
-                document.getElementById("mes") = " No tienes que declarar renta"
-            }
             cursor1.continue()
         }
         else{
