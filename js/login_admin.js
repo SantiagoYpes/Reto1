@@ -53,7 +53,6 @@ function Registrar(){
 	window.open("home_admin.html", "_top")
 }
 */
-
 function Login(){
 	//alert("Verificando Login");
 	let user = document.getElementById("user").value;

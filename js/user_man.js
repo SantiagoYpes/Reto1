@@ -10,10 +10,12 @@ let cursor;
 let datable;
 
 function start() {
-    btnAdd = document.getElementById("btn_add");
-	btnAdd.addEventListener("click", Redirect_Add, false);
-    btnDelete = document.getElementById("btn_delete");
-	btnDelete.addEventListener("click", DeleteUser, false);
+    btnAdd = document.getElementById("btn_add")
+	btnAdd.addEventListener("click", Redirect_Add, false)
+    btnDelete = document.getElementById("btn_delete")
+	btnDelete.addEventListener("click", DeleteUser, false)
+    btnEdit = document.getElementById("btn_edit")
+	btnEdit.addEventListener("click", EditUser, false)
     //Crear Base de Datos
     let request = indexedDB.open("DB_1");
     //Verificar la creación de la base de datos
@@ -55,7 +57,6 @@ function Registrar(){
     //alert("Usuario registrado.")
 }
 */
-
 function Load_Users() {
     datable = document.getElementById("user_table")
     count = 1;
@@ -96,6 +97,17 @@ function UserTable(e) {
 }
 function Redirect_Add(){
     window.open('../html/add_user.html','_top')
+}
+function EditUser(){
+    id=document.getElementById("current_id").value
+    //Agregamos al almacén de datos los objetos (registros)
+    var transaction = bd.transaction(["active"], "readwrite");
+    //Almacenamos en la variable almacen la transacción
+    
+    var store = transaction.objectStore("active");
+    //Agregamos los datos del registro a los "campos"
+    var add = store.add({id: id});
+    window.open('../html/edit_user.html','_top')
 }
 function DeleteUser(){
     var id_delete = document.getElementById("current_id").value

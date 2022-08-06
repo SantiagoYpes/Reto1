@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/edit_user.css">
+    <script src="https://kit.fontawesome.com/1a28e5f39b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="../js/edit_user.js"></script>
+    <title>Actualizar Datos</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="textos-hero">
+            <h1>Editar Datos</h1>
+            <a class="cta" id="home"> Volver </a> 
+        </div>
+        <div class="svg-hero" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-0.56,45.89 C149.99,150.00 372.45,-27.11 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #ffff;">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <center>
+        <div class="perfil">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <br>
+        <div class="info">
+            <table class="hover">
+                <tr>
+                    <th><label for="">Documento de Identidad:</label></th>
+                    <th class="info"> <input type="text" id="id" readonly required></label></th>
+                </tr>
+            </table>
+            <br>
+            <table class="hover">
+                <tr>
+                    <th><label for="">Nombre:</label></th>
+                    <th class="info"> <input type="text" id="name" required></label></th>
+                </tr>
+            </table>
+            <br>
+            <table class="hover">
+                <tr>
+                    <th><label for="">Salario:</label></th>
+                    <th class="info"> <input type="number" id="salary" required></label></th>
+                </tr>
+            </table>
+            <br>
+            <table class="hover">
+                <tr>
+                    <th><label for="">Cargo:</label></th>
+                    <th class="info"> <input type="text" id="position" required></label></th>
+                </tr>
+            </table>
+            <br>
+            <table class="hover">
+                <tr>
+                    <th><label for="">Email:</label></th>
+                    <th class="info"> <input type="email" id="email" required></label></th>
+                </tr>
+            </table>
+            <br>
+            <table class="hover">
+                <tr>
+                    <th><label for="">Teléfono:</label></th>
+                    <th class="info"> <input type="number" id="tel" required></label></th>
+                </tr>
+            </table>
+            <br>
+            <label class="switchBtn">
+                <input type="checkbox" id="status">
+                <div class="slide round"> Activo </div>
+            </label>
+
+            <br>
+            <a class="cta" id="btn_update"> Actualizar</a>
+            <br>
+        </div>
+    </center>
+</body>
+
+</html>
