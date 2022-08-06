@@ -68,7 +68,7 @@ table.hover input[type=text]{
 .options{
 	background-color: #fff;
 	width: 40px;
-	height: 50px;
+	height: 30px;
     border:none;
 	empty-cells: hide; 
     border-bottom: 2px solid #D8D8D8;
@@ -77,25 +77,24 @@ table.options input[type=text]{
 	border: none;
 	font-size: 20px;
 	width: 400px;
-	height: 50px;
+	height: 30px;
 	text-align: center;
     background-color: #fff;
 	color: #717171;
 }
 button.icon{
 	border: none;
-	width: 80px;
+	width: 40px;
+	height: 30px;
 	background-color: #fff;
 }
 i:hover{ 
-    
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);   
 	transform: scale(1.23); 
 	cursor: pointer;
 	color:#717171
 } 
-i {
-    margin: 30px 0 20px 0; 
+i { 
     color: #c1524e; 
-    font-size: 30px;
-}  
+    font-size: 20px;
+}

@@ -33,8 +33,9 @@ function Add_pay() {
     let id_user = document.getElementById("id_user").value
     let month = document.getElementById("month_pay").value
     let year = document.getElementById("year_pay").value
+    alert(year)
     let bank = document.getElementById("bank").value
-    let id_pay= "124"
+    let id_pay= "128"
     //Creamos la transacción
     let transaction = bd.transaction(["users"], "readwrite");
     let store = transaction.objectStore("users");
@@ -50,7 +51,7 @@ function Add_pay() {
                 //Almacenamos en la variable almacen la transacción
                 let store1 = transaction1.objectStore("pays")
                 //Agregamos los datos del registro a los "campos"
-                let agregar1 = store1.add({id_pay: id_pay, id_user: id_user, year:year,
+                let add1 = store1.add({id_pay: id_pay, id_user: id_user, year:year,
                     month:month,bank:bank,value:db_salary});
                 Info()
             }

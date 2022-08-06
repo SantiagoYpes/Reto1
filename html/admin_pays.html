@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Pagar</title>
     <link rel="stylesheet" href="../css/login.css">
@@ -7,33 +8,55 @@
 </head>
 <form>
     <h1>Realizar Pago</h1>
-    <input placeholder="Documento de Identidad del Empleado" type="text" id="id_user" required/>
-    <select name="Pays" id="month_pay" class="month" required>   
-        <option value=""> Selecciona el Mes </option>  
-        <option value="Enero"> Enero </option> 
-        <option value="Febrero"> Febrero </option>  
-        <option value="Marzo"> Marzo </option>  
-        <option value="Abril"> Abril </option>  
-        <option value="Mayo"> Mayo </option>  
-        <option value="Junio"> Junio </option>  
-        <option value="Julio"> Julio </option>  
-        <option value="Agosto"> Agosto </option>  
-        <option value="Septiembre"> Septiembre </option>  
-        <option value="Octubre"> Octubre </option>   
+    <input placeholder="Documento de Identidad del Empleado" type="text" id="id_user" required />
+    <select name="Pays" id="month_pay" class="select" required>
+        <option value=""> Selecciona el Mes </option>
+        <option value="Enero"> Enero </option>
+        <option value="Febrero"> Febrero </option>
+        <option value="Marzo"> Marzo </option>
+        <option value="Abril"> Abril </option>
+        <option value="Mayo"> Mayo </option>
+        <option value="Junio"> Junio </option>
+        <option value="Julio"> Julio </option>
+        <option value="Agosto"> Agosto </option>
+        <option value="Septiembre"> Septiembre </option>
+        <option value="Octubre"> Octubre </option>
         <option value="Noviembre"> Noviembre </option>
-        <option value="Diciembre"> Diciembre </option>   
+        <option value="Diciembre"> Diciembre </option>
     </select>
-    <input placeholder="Ingrese el Año" type="number" id="year_pay" required/>
-    <select name="Pays" id="bank" class="municipio" required>   
-        <option value=""> Selecciona el Banco </option>  
-        <option value="BBVA"> BBVA </option> 
-        <option value="BANCOLOMBIA"> BANCOLOMBIA </option>  
-        <option value="DAVIVIENDA"> DAVIVIENDA </option>   
-    </select>  
+    <br><br>
+    <select name="cert_year" id="year_pay" class="select">
+        <option value=""> Selecciona el Año </option>
+        <option value="2021"> 2021 </option>
+        <option value="2020"> 2020 </option>
+        <option value="2019"> 2019 </option>
+        <option value="2018"> 2018 </option>
+        <option value="2017"> 2017 </option>
+        <option value="2016"> 2016 </option>
+        <option value="2015"> 2015 </option>
+        <option value="2014"> 2014 </option>
+        <option value="2013"> 2013 </option>
+        <option value="2012"> 2012 </option>
+        <option value="2011"> 2011 </option>
+        <option value="2010"> 2010 </option>
+        <option value="2009"> 2009 </option>
+        <option value="2008"> 2008 </option>
+        <option value="2007"> 2007 </option>
+    </select>
+    <br><br>
+    <select name="Pays" id="bank" class="select" required>
+        <option value=""> Selecciona el Banco </option>
+        <option value="BBVA"> BBVA </option>
+        <option value="BANCOLOMBIA"> BANCOLOMBIA </option>
+        <option value="DAVIVIENDA"> DAVIVIENDA </option>
+    </select>
+    <br>
+    <br>
     <button class="btn" id="btn_pay">Realizar Pago</button>
     <br>
-    <a href="user_man.html">  Regresar </a></h6>
+    <br>
+    <a href="user_man.html"> Regresar </a></h6>
     </div>
-  </form>
-  
+</form>
+
 </html>

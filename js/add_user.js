@@ -45,7 +45,7 @@ function Add_user(){
     //Almacenamos en la variable almacen la transacción
     var store = transaction.objectStore("users");
     //Agregamos los datos del registro a los "campos"
-    var agregar = store.add({id: id, name: name, salary:salary,
+    var add = store.add({id: id, name: name, salary:salary,
     email:email,position:position,tel:tel,isactive:status});
     alert("Empleado Registrado")
 }
