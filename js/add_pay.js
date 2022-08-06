@@ -33,8 +33,9 @@ function Add_pay() {
     let id_user = document.getElementById("id_user").value
     let month = document.getElementById("month_pay").value
     let year = document.getElementById("year_pay").value
+    alert(year)
     let bank = document.getElementById("bank").value
-    let id_pay= "124"
+    let id_pay= "128"
     //Creamos la transacción
     let transaction = bd.transaction(["users"], "readwrite");
     let store = transaction.objectStore("users");

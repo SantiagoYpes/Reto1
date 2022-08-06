@@ -183,3 +183,11 @@ input:checked + .slide:before {
   transform: translateX(26px);
   left: -26px;
 }
+.select{
+	background-color: #FFF;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-color: #D8D8D8;
+} 
