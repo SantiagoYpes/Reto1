@@ -19,7 +19,7 @@ function start(){
 		//Registrar()
 	}
 	//Creamos el almacén de objetos (Tabla) -> Pagos - Usuarios - Administrador - Sesión Iniciada
-	request.onupgradeneeded = function(e){
+	/*request.onupgradeneeded = function(e){
 		bd = e.target.result;
 		//Si se requiere crear el almacén -> usuarios
 		let tbUsers = bd.createObjectStore("users", {keyPath: "id"});
@@ -35,7 +35,6 @@ function start(){
 		tbActive.createIndex("user", "user", { unique: true});
 	}
 }
-/*
 function Registrar(){
 	alert("Registrar admin")
 	//Función para agregar el admin a la BD
@@ -50,9 +49,9 @@ function Registrar(){
 	var agregar = store.add({admin: user, password: password})
 	//Si agregar el objeto (registro) es exitoso, se ejecuta --> mostrar 
 	alert("Usuario registrado.")
-	window.open("home_admin.html", "_top")
+	window.open("home_admin.html", "_top")*/
 }
-*/
+
 function Login(){
 	//alert("Verificando Login");
 	let user = document.getElementById("user").value;
@@ -72,8 +71,7 @@ function Login(){
 			//cursor.continue();
 		}
 		if (user == dbuser && password == dbpassword){
-			alert("BIENVENIDO: " + cursor.value.admin);
-			window.open('../html/home_admin.html','_top');
+			window.open('../html/home_admin.html','_top')
 			//window.open('index.html','_blank');
 		}
 		if (user !== dbuser || password !== dbpassword){
@@ -83,4 +81,4 @@ function Login(){
 }
 
 //Se ejecuta al cargar la página
-window.addEventListener("load", start, false);
+window.addEventListener("load", start, false)

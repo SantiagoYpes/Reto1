@@ -17,23 +17,12 @@ function start() {
         bd = e.target.result;
         //Registrar();
     }
-    //Creamos el almacén de objetos (Tabla) -> Pagos - Usuarios - Administrador - Sesión Iniciada
-    request.onupgradeneeded = function (e) {
-        bd = e.target.result;
-        //Si se requiere crear el almacén -> usuarios
-        let tbPays = bd.createObjectStore("pays", { keyPath: "id_pay" })
-        let tbUsers = bd.createObjectStore("users", { keyPath: "id" })
-        //Definimos uno o varios índices secundarios
-        tbUsers.createIndex("id", "id", { unique: true })
-        tbPays.createIndex("id_pay", "id_pay", { unique: true })
-    }
 }
 
 function Add_pay() {
     let id_user = document.getElementById("id_user").value
     let month = document.getElementById("month_pay").value
     let year = document.getElementById("year_pay").value
-    alert(year)
     let bank = document.getElementById("bank").value
     let id_pay= String(random())
     //Creamos la transacción

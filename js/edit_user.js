@@ -22,16 +22,6 @@ function iniciar(){
 		//alert("La Base de Datos se creó con éxito");
 		ViewProfile();
 	}
-    request.onupgradeneeded = function(e){
-		//Si se requiere crear el almacén (Tabla) -> gente
-		bd = e.target.result;
-		//Si se requiere crear el almacén -> usuarios
-		let tbUsers = bd.createObjectStore("users", { keyPath: "id" })
-        let tbActive = bd.createObjectStore("active", {keyPath: "id"})
-		//Definimos uno o varios índices secundarios
-		tbUsers.createIndex("id", "id", { unique: true})
-		tbActive.createIndex("user", "user", { unique: true})
-	}
 }
 
 function ViewProfile(){

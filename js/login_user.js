@@ -17,16 +17,6 @@ function start(){
 		//Guardamos la base de datos en una variable (bd)
 		bd = e.target.result;
 	}
-	//Creamos el almacén de objetos (Tabla) -> Pagos - Usuarios - Administrador - Sesión Iniciada
-	request.onupgradeneeded = function(e){
-		bd = e.target.result;
-		//Si se requiere crear el almacén -> usuarios
-		let tbUsers = bd.createObjectStore("users", {keyPath: "id"});
-		let tbActive = bd.createObjectStore("active", {keyPath: "id"});
-		//Definimos uno o varios índices secundarios
-		tbUsers.createIndex("id", "id", { unique: true});
-		tbActive.createIndex("user", "user", { unique: true});
-	}
 }
 
 function Login(){
@@ -43,17 +33,17 @@ function Login(){
 			//alert("Usuario: " + cursor.value.usuario + "\n\
 	               //Contraseña: " + cursor.value.password);
 			var dbuser = cursor.value.id;
+			var dbactive = cursor.value.isactive
 			//cursor.continue();
 		}
-		if (user == dbuser){
+		if (user == dbuser && dbactive=="1"){
             Add_sesion(user)
-			alert("BIENVENIDO: " + cursor.value.name)
 			window.open('../html/home_user.html','_top')
             
 
 		}
-		if (user !== dbuser){
-			alert("Usuario incorrecto")
+		else{
+			alert("Usuario incorrecto o sesión inactiva")
 		}
 	}
 }

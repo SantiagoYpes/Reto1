@@ -25,14 +25,6 @@ function start() {
         //Registrar();
         Load_Users();
     }
-    //Creamos el almacén de objetos (Tabla) -> Pagos - Usuarios - Administrador - Sesión Iniciada
-    request.onupgradeneeded = function (e) {
-        bd = e.target.result;
-        //Si se requiere crear el almacén -> usuarios
-        var tbUsers = bd.createObjectStore("users", { keyPath: "id" });
-        //Definimos uno o varios índices secundarios
-        tbUsers.createIndex("id", "id", { unique: true });
-    }
 }
 /*
 function Registrar(){

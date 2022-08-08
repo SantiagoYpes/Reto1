@@ -12,14 +12,6 @@ function start() {
         bd = e.target.result;
         //Registrar();
     }
-    //Creamos el almacén de objetos (Tabla) -> Pagos - Usuarios - Administrador - Sesión Iniciada
-    request.onupgradeneeded = function (e) {
-        bd = e.target.result;
-        //Si se requiere crear el almacén -> usuarios
-        let tbActive = bd.createObjectStore("active", { keyPath: "id" })
-        //Definimos uno o varios índices secundarios
-        tbActive.createIndex("id", "id", { unique: true })
-    }
 }
 function Load_Id() {
     let transaction = bd.transaction(["active"], "readonly")

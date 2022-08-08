@@ -25,24 +25,9 @@ function start() {
         //Registrar()
         //ConfirmUser()
     }
-    //Creamos el almacén de objetos (Tabla) -> Pagos - Usuarios - Administrador - Sesión Iniciada
-    request.onupgradeneeded = function (e) {
-        bd = e.target.result;
-        //Si se requiere crear el almacén -> usuarios
-        let tbUsers = bd.createObjectStore("users", { keyPath: "id" });
-        let tbPays = bd.createObjectStore("pays", { keyPath: "id_pay" });
-        let tbActive = bd.createObjectStore("active", { keyPath: "id" });
-        //Definimos uno o varios índices secundarios
-        tbUsers.createIndex("id", "id", { unique: true });
-        tbPays.createIndex("id_pay", "id_pay", { unique: true });
-        tbPays.createIndex("id_user", "id_user", { unique: false });
-        tbPays.createIndex("year", "year", { unique: false });
-        tbActive.createIndex("user", "user", { unique: true });
-    }
 }
 function ConfirmUser() {
     document.getElementById('cert').style.display = ''
-    document.getElementById('head').style.display = ''
     year = parseInt(document.getElementById("cert_year").value)
     document.getElementById("incerti_date").value = document.getElementById("incerti_date").value + year - 1
     document.getElementById("lastcerti_date").value = document.getElementById("lastcerti_date").value + year
@@ -90,7 +75,6 @@ function showData(e) {
         document.getElementById("id_certi").value = cursor.value.id
         document.getElementById("name_certi").value = cursor.value.name
         document.getElementById('obj').style.display = ''
-        document.getElementById('head').style.display = ''
         var transaction1 = bd.transaction(["pays"], "readwrite")
         var store1 = transaction1.objectStore("pays")
         var index1 = store1.index("id_user");

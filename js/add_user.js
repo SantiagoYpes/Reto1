@@ -16,14 +16,6 @@ function start() {
         bd = e.target.result;
         //Registrar();
     }
-    //Creamos el almacén de objetos (Tabla) -> Pagos - Usuarios - Administrador - Sesión Iniciada
-    request.onupgradeneeded = function (e) {
-        bd = e.target.result;
-        //Si se requiere crear el almacén -> usuarios
-        let tbUsers = bd.createObjectStore("users", { keyPath: "id" });
-        //Definimos uno o varios índices secundarios
-        tbUsers.createIndex("id", "id", { unique: true });
-    }
 }
 
 function Add_user(){
