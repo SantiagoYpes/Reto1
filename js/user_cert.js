@@ -90,6 +90,7 @@ function showData(e) {
         document.getElementById("id_certi").value = cursor.value.id
         document.getElementById("name_certi").value = cursor.value.name
         document.getElementById('obj').style.display = ''
+        document.getElementById('head').style.display = ''
         var transaction1 = bd.transaction(["pays"], "readwrite")
         var store1 = transaction1.objectStore("pays")
         var index1 = store1.index("id_user");
@@ -129,6 +130,10 @@ function GetPays(e) {
             document.getElementById("out").value = total_out
             document.getElementById("total_inp").value = total_in
             document.getElementById("total_outp").value = total_out
+            if (total_in<50000000) {
+                document.getElementById("rent").value = "No declara renta"
+            }
+            
             cursor1.continue()
         }
         else{

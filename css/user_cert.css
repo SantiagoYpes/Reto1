@@ -36,7 +36,7 @@ header .overlay {
   padding: 50px;
   color: #FFF;
   text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient(135deg, #c1524e 10%, #c9c1c1 100%);
+  background-image: linear-gradient(135deg, #48679687 10%, #c9c1c1 100%);
 
 }
 
@@ -45,7 +45,7 @@ form {
 }
 
 table.head_user {
-  background-color: #c1524e;
+  background-color: #48679687;
   border: none;
   empty-cells: hide;
   border-bottom: 2px solid #D8D8D8;
@@ -57,7 +57,7 @@ table.head_user input[type=text] {
   width: 200px;
   height: 30px;
   text-align: center;
-  background-color: #c1524e;
+  background-color: #48679687;
   color: #FFF;
 }
 
@@ -157,7 +157,7 @@ input[type=text]{
 .btn{
   width: 100px;
   height: 40px;
-  background-color: #c1524e;  
+  background-color: #48679687;  
   font-size: 16px;
   color: #FFF;
   cursor:pointer;
@@ -165,5 +165,5 @@ input[type=text]{
 }
 .btn:hover{
   background-color: #fff;
-  color: #c1524e;
+  color: #48679687;
 }

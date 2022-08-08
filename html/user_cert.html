@@ -24,138 +24,135 @@
 <body>
     <br>
     <center>
-<<<<<<< HEAD
-        <h3><a href="home_user.html">  Inicio </a></h3>
-        
-        <object class="pdfview" type="application/pdf" 
-        data="../Formulario_220_2022.pdf"></object>
-        
-    </center>
-    <center>
         <table class="option">
-=======
-        <br>
-        <select name="cert_year" id="cert_year" class="year">
-            <option value=""> Selecciona el Año </option>
-            <option value="2021"> 2021 </option>
-            <option value="2020"> 2020 </option>
-            <option value="2019"> 2019 </option>
-            <option value="2018"> 2018 </option>
-            <option value="2017"> 2017 </option>
-            <option value="2016"> 2016 </option>
-            <option value="2015"> 2015 </option>
-            <option value="2014"> 2014 </option>
-            <option value="2013"> 2013 </option>
-            <option value="2012"> 2012 </option>
-            <option value="2011"> 2011 </option>
-            <option value="2010"> 2010 </option>
-            <option value="2009"> 2009 </option>
-            <option value="2008"> 2008 </option>
-            <option value="2007"> 2007 </option>
-        </select>
-        <button class="btn" id="btn_con">Consultar</button>
-        <div id="user_mas"><input type="text" id="mes" readonly></div>
-        <br>
-        </div>
-        <br>
-        <div id="head" style="display: none;">
-        <table class="head_user">
-            <th class="id_info">
-                <input type="text" value="Documento de Identidad" readonly>
-                <input type="text" value="Nombre" readonly>
-                <input type="text" value="Cargo" readonly>
-            </th>
-        </table>
-        <div id="user_table">
+            <br>
+            <select name="cert_year" id="cert_year" class="year">
+                <option value=""> Selecciona el Año </option>
+                <option value="2021"> 2021 </option>
+                <option value="2020"> 2020 </option>
+                <option value="2019"> 2019 </option>
+                <option value="2018"> 2018 </option>
+                <option value="2017"> 2017 </option>
+                <option value="2016"> 2016 </option>
+                <option value="2015"> 2015 </option>
+                <option value="2014"> 2014 </option>
+                <option value="2013"> 2013 </option>
+                <option value="2012"> 2012 </option>
+                <option value="2011"> 2011 </option>
+                <option value="2010"> 2010 </option>
+                <option value="2009"> 2009 </option>
+                <option value="2008"> 2008 </option>
+                <option value="2007"> 2007 </option>
+            </select>
+            <button class="btn" id="btn_con">Consultar</button>
+            <br>
+            <br>
 
-        </div>
-        <br>
-        <table class="head_user">
-            <th class="id_info">
-                <input type="text" value="Descripción" readonly>
-                <input type="text" value="Valor" readonly>
-            </th>
-        </table>
-        <table class="info">
-            <tr>
+            <table class="head_user">
                 <th class="id_info">
-                    <input type="text" value="Ingresos" readonly>
-                    <input type="text" id="in" value="" readonly>
-                </th>
-            </tr>
->>>>>>> b4672b4066b99a252e9378655f786c9d37ae6c79
-            <tr>
-                <th>
-                    <input type="text" value="Retenciones" readonly>
-                    <input type="text" id="out" value="" readonly>
-                </th>
-            </tr>
-        </table>
-        </div>
-        <br>
-        <div class="cert" id="cert"style="display: none;">
-            <table>
-                <tr>
-                    <th class="img"><img src="../img/diancd.png" id="img" alt=""> </th>
-                    <th class="tittle">Certificado de Ingresos y Retenciones por Rentas de Trabajo y de Pensiones
-                        Año gravable </th>
-                    <th class="img"><img src="../img//220.png" id="img" alt=""></th>
-                </tr>
-            </table>
-            <table>
-                <th class="normal" style="color:gray;text-align: center">Antes de diligenciar este formulario lea
-                    cuidadosamente las instrucciones</th>
-                <th class="normal">4. Número de formulario</th>
-            </table>
-            <table class="table2">
-                <th>5. Tipo de Documento
-                    <br> C.C.
-                </th>
-                <th>6. Número de Documento
-                    <br><input type="text" placeholder="ID" id="id_certi" readonly>
-                </th>
-                <th>7. Nombre
-                    <br><input type="text" placeholder="NAME" id="name_certi" readonly>
+                    <input type="text" value="Documento de Identidad" readonly>
+                    <input type="text" value="Nombre" readonly>
+                    <input type="text" value="Cargo" readonly>
                 </th>
             </table>
-            <table>
-                <th class="normal">8. Periodo de Certificación
-                    <br> De:31/12/<input type="text" id="incerti_date" readonly>
-                    Hasta 31/12/<input type="text"  id="lastcerti_date" readonly>
+            <div id="user_table">
 
+            </div>
+            <br>
+            <table class="head_user">
+                <th class="id_info">
+                    <input type="text" value="Descripción" readonly>
+                    <input type="text" value="Valor" readonly>
                 </th>
-                <th class="normal">7. Fecha de Expedición
-                    <br><input type="text" placeholder="DD/MM/AAAA" id="current_date" readonly>
+            </table>
+            <table class="info">
+                <tr>
+                    <th class="id_info">
+                        <input type="text" value="Ingresos" readonly>
+                        <input type="text" id="in" value="" readonly>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="text" value="Retenciones" readonly>
+                        <input type="text" id="out" value="" readonly>
+                    </th>
+                </tr>
+            </table>
+            <br>
+            <table class="head_user">
+                <th class="id_info">
+                    <input type="text" value="Declaración de Renta" readonly>
+                    <input type="text" id="rent" readonly>
                 </th>
             </table>
-            <table id="inner_certin">
-                <tr>
-                    <th class="desc"> Concepto de los Ingresos </th>
-                    <th class="value"> Valor </th>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th class="desc1"> Total Pagos por salarios o emolumentos eclesiásticos </th>
-                    <th><input type="text" placeholder="value" id="total_inp" readonly></th>
-                </tr>
-            </table>
-            <table id="inner_certout">
-                <tr>
-                    <th class="desc"> Concepto de los aportes </th>
-                    <th class="value"> Valor </th>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th class="desc1"> Total Aportes obligatorios a cargo del trabajador </th>
-                    <th><input type="text" placeholder="value" id="total_outp" readonly></th>
-                </tr>
-            </table>
-        </div>
-        <br>
-        <object class="pdfview" id="obj" style="display:none" type="application/pdf" data="../Formulario_220_2022.pdf">
-        </object>
+            <br>
+
+            <br>
+            <div class="cert" id="cert" style="display: none;">
+                <table>
+                    <tr>
+                        <th class="img"><img src="../img/diancd.png" id="img" alt=""> </th>
+                        <th class="tittle">Certificado de Ingresos y Retenciones por Rentas de Trabajo y de Pensiones
+                            Año gravable </th>
+                        <th class="img"><img src="../img//220.png" id="img" alt=""></th>
+                    </tr>
+                </table>
+                <table>
+                    <th class="normal" style="color:gray;text-align: center">Antes de diligenciar este formulario lea
+                        cuidadosamente las instrucciones</th>
+                    <th class="normal">4. Número de formulario</th>
+                </table>
+                <table class="table2">
+                    <th>5. Tipo de Documento
+                        <br> C.C.
+                    </th>
+                    <th>6. Número de Documento
+                        <br><input type="text" placeholder="ID" id="id_certi" readonly>
+                    </th>
+                    <th>7. Nombre
+                        <br><input type="text" placeholder="NAME" id="name_certi" readonly>
+                    </th>
+                </table>
+                <table>
+                    <th class="normal">8. Periodo de Certificación
+                        <br> De:31/12/<input type="text" id="incerti_date" readonly>
+                        Hasta 31/12/<input type="text" id="lastcerti_date" readonly>
+
+                    </th>
+                    <th class="normal">7. Fecha de Expedición
+                        <br><input type="text" placeholder="DD/MM/AAAA" id="current_date" readonly>
+                    </th>
+                </table>
+                <table id="inner_certin">
+                    <tr>
+                        <th class="desc"> Concepto de los Ingresos </th>
+                        <th class="value"> Valor </th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th class="desc1"> Total Pagos por salarios o emolumentos eclesiásticos </th>
+                        <th><input type="text" placeholder="value" id="total_inp" readonly></th>
+                    </tr>
+                </table>
+                <table id="inner_certout">
+                    <tr>
+                        <th class="desc"> Concepto de los aportes </th>
+                        <th class="value"> Valor </th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th class="desc1"> Total Aportes obligatorios a cargo del trabajador </th>
+                        <th><input type="text" placeholder="value" id="total_outp" readonly></th>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <object class="pdfview" id="obj" style="display:none" type="application/pdf"
+                data="../Formulario_220_2022.pdf">
+            </object>
     </center>
 </body>
 

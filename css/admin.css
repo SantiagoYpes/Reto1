@@ -101,13 +101,13 @@ body{
 #btn_log{
     height: 200px;
     width: 200px;
-    color:#c1524e;
+    color:#48679687;
 }
 
 
 .card1 i {
     margin: 30px 0 20px 0; 
-    color: #c1524e; 
+    color: #48679687; 
     font-size: 50px;
 }  
 
@@ -126,7 +126,7 @@ body{
 
 .card i {
     margin: 30px 0 20px 0; 
-    color: #c1524e; 
+    color: #48679687; 
     font-size: 50px;
 } 
 
