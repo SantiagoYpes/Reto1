@@ -98,3 +98,25 @@ i {
     color: #48679687; 
     font-size: 20px;
 }
+.year{
+	background-color: #FFF;
+	width: 200px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 10px;
+	border-color: #D8D8D8;
+  
+  }
+  .btn{
+	width: 100px;
+	height: 40px;
+	background-color: #48679687;  
+	font-size: 16px;
+	color: #FFF;
+	cursor:pointer;
+	border-radius: 10px;
+  }
+  .btn:hover{
+	background-color: #fff;
+	color: #48679687;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Porcentaje de Empleados que Declaran
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1a28e5f39b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/user_man.css">
+    <script src="../js/percent_users.js"></script>
+</head>
+<header>
+    <div class="overlay">
+        <h1>Porcentaje de Empleados que Declaran</h1>
+    </div>
+</header>
+
+<body>
+    <br>
+    <center>
+        <h3><a href="reportes_admin.html">  Regresar </a></h3>
+        <table class="option">
+            <br>
+            <select name="cert_year" id="cert_year" class="year">
+                <option value=""> Selecciona el Año </option>
+                <option value="2021"> 2021 </option>
+                <option value="2020"> 2020 </option>
+                <option value="2019"> 2019 </option>
+                <option value="2018"> 2018 </option>
+                <option value="2017"> 2017 </option>
+                <option value="2016"> 2016 </option>
+                <option value="2015"> 2015 </option>
+                <option value="2014"> 2014 </option>
+                <option value="2013"> 2013 </option>
+                <option value="2012"> 2012 </option>
+                <option value="2011"> 2011 </option>
+                <option value="2010"> 2010 </option>
+                <option value="2009"> 2009 </option>
+                <option value="2008"> 2008 </option>
+                <option value="2007"> 2007 </option>
+            </select>
+            <button class="btn" id="btn_con">Consultar</button>
+            <br>
+            <br>
+            <table class="head_user">
+                <th class="id_mayor">
+                    <input type="text" value="Declaran" readonly>
+                    <input type="text" value="No Declaran" readonly>
+                </th>
+            </table>
+            <div id="user_table1">
+            </div>
+            <br>
+    </center>
+</body>
+
+</html>

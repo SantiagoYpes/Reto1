@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Empleados activos e inactivos
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1a28e5f39b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/user_man.css">
+    <script src="../js/activos_inactivos.js"></script>
+</head>
+<header>
+    <div class="overlay">
+        <h1>Empleados activos e inactivos</h1>
+    </div>
+</header>
+
+<body>
+    <br>
+    <center>
+        <h3><a href="reportes_admin.html">  Regresar </a></h3>
+        <br>
+        <h3>Empleados activos</h3>
+        <table class="head_user">
+            <th class="id_activos">
+                <input type="text" value="Documento de Identidad" readonly>
+                <input type="text" value="Nombre" readonly>
+            </th>
+        </table>
+        <br>
+        <div id="user_table">
+        </div>
+        <h3>Empleado inactivos</h3>
+        <table class="head_user">
+            <th class="id_inactivos">
+                <input type="text" value="Documento de Identidad" readonly>
+                <input type="text" value="Nombre" readonly>
+            </th>
+        </table>
+        <div id="user_table1">
+        </div>      
+    </center>
+</body>
+</html>
